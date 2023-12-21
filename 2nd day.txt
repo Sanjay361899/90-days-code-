@@ -1,0 +1,202 @@
+********
+***  ***
+**    **
+*      *
+**    **
+***  ***
+********
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int row,col;
+   for(row=4; row>=1;--row){
+       for(col=1;col<=row;++col){
+           cout<<"*";
+       }
+       for(col=1;col<=8-2*row;++col){
+           cout<<" ";
+       }
+     for(col=1;col<=row;++col){
+           cout<<"*";
+       }
+       cout<<endl;
+   }
+    for(row=2; row<=4;++row){
+       for(col=1;col<=row;++col){
+           cout<<"*";
+       }
+       for(col=1;col<=8-2*row;++col){
+           cout<<" ";
+       }
+     for(col=1;col<=row;++col){
+           cout<<"*";
+       }
+       cout<<endl;
+   }
+}
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int row,col;
+   for(row=4; row>=1;--row){
+       for(col=1;col<=row;++col){
+           cout<<"*";
+       }
+       for(col=1;col<=8-2*row;++col){
+           cout<<" ";
+       }
+     for(col=1;col<=row;++col){
+           cout<<"*";
+       }
+       cout<<endl;
+   }
+    for(row=2; row<=4;++row){
+       for(col=1;col<=row;++col){
+           cout<<"*";
+       }
+       for(col=1;col<=8-2*row;++col){
+           cout<<" ";
+       }
+     for(col=1;col<=row;++col){
+           cout<<"*";
+       }
+       cout<<endl;
+   }
+}
+
+
+
+*      *
+**    **
+***  ***
+********
+***  ***
+**    **
+*      *
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+       int row,col;
+    for(row=1;row<=4;row++){
+        for(col=1;col<=row;++col){
+            cout<<"*";
+            
+        }
+        for(col=1;col<=8-2*row;++col){
+            cout<<" ";
+        }
+        for(col=1;col<=row;++col){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    for(row=3;row>=1;row--){
+        for(col=1;col<=row;++col){
+            cout<<"*";
+        }
+        for(col=1;col<=8-2*row;++col){
+            cout<<" ";
+        }
+        for(col=1;col<=row;++col){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+}
+
+Output:
+
+   *
+  ***
+ *****
+*******
+ *****
+  ***
+   *
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+       int row,col;
+    for(row=1;row<=4;row++){
+           for(col=1;col<=4-row;++col){
+            cout<<" ";
+        }
+        for(col=1;col<=2*row-1;++col){
+            cout<<"*";
+            
+        }
+        cout<<endl;
+    }
+    for(row=3;row>=1;row--){
+         for(col=1;col<=4-row;++col){
+            cout<<" ";
+        }
+        for(col=1;col<=2*row-1;++col){
+            cout<<"*";
+        }
+     
+     
+        cout<<endl;
+    }
+}
+
+
+
+decimal to binary:
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{ 
+    int n,rem,ans,mul=1;
+    cout<<"please enter input to convert into a binary number:";
+    cin>>n;
+    while(n>0){
+        rem=n%2;
+        n=n/2;
+        ans= rem*mul+ans;
+        mul=mul*10;
+        
+    }
+    cout<<"binary number converted:"<<ans;
+}
+
+binary to decimal:
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{ 
+    int n,rem,ans,mul=1;
+    cout<<"please enter input to convert into a decimal number:";
+    cin>>n;
+    while(n>0){
+        rem=n%10;
+        n=n/10;
+        ans= mul*rem+ans;
+        mul=2*mul;
+        
+    }
+    cout<<"binary number converted to decimal:"<<ans;
+}
