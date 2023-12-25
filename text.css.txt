@@ -1,0 +1,40 @@
+//whether a leap year or not.
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int year;
+    cout<<"CHECK WHETHER A YAER IS A LEAP YEAR OR NOT";
+    cin>>year;
+    if(year%400==0){
+        cout<<"leap year.";
+    }else if(year%4==0 && year%100!=0){
+         cout<<"leap year.";
+    }else{
+        cout<<"Not a leap Year.";
+    }
+    return 0;
+}
+
+program which tell reverse a number:
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int number, ans=0,mul=10 ,rem;
+    cout<<"enter an number";
+    cin>>number;
+    while(number>0){
+        rem=number%10;
+        number/=10;
+        ans=ans*mul+rem;
+
+    }
+    cout<<ans;
+    return 0;
+}
