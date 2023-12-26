@@ -1,0 +1,98 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int num,rep,rem,ans=0;
+    cout<<"enter a number to check whether it is a palindrone or not:";
+    cin>>num;
+    rep=num;
+    while(num>0){
+        rem= num%10;
+        num/=10;
+        ans=ans*10+rem;
+    }
+    cout<<rep<<" "<<ans;
+    if(rep==ans){
+        cout<<"number is palindrone.";
+    }else{
+        cout<<"not a palindrone.";
+    }
+    return ans;
+}
+
+
+convert to big char name:
+
+
+#include <iostream>
+
+using namespace std;
+char change(char res){
+    char d=res-'a'+'A';
+    return d;
+}
+int main()
+{ 
+    char n;
+    cout<<"enter a character to convert";
+    cin>>n;
+    cout<<change(n);
+    return 0;
+}
+
+
+check whethher a number is armstrong number or not :
+#include <iostream>
+#include<cmath>
+
+using namespace std;
+
+int main()
+{
+    int number,orignalno,rem,arm=0,count=0;
+    cout<<"enter a number is armstrong number:";
+    cin>>number;
+    orignalno=number;
+    while(number>0){
+        ++count;
+        number/=10;
+    }
+    number=orignalno;
+    while(number>0){
+        rem=number%10;
+        number/=10;
+        cout<<rem<<" "<<count<<" "<<arm<<"  "<<number<<endl;
+        arm=arm+pow(rem,count);
+    }
+    cout<<arm<<" "<<orignalno;
+    if(arm==orignalno){
+        cout<<"armstrong number";
+    }else{
+        cout<<"not armstrong no.";
+    }
+    return 0;
+}
+
+
+program which show whether points forming an rectangle:
+
+#include <iostream>
+#include<cmath>
+
+using namespace std;
+
+int main()
+{
+    int a,b,c,d;
+    cout<<"enter four points values so that we can check whether it is forming a rectangle:";
+    cin>>a>>b>>c>>d;
+   if((a==b&&c==d)||(a==c&&b==d)||(a==d&&b==c)){
+       cout<<"enter points forming an rectangle.";
+   }else{
+       cout<<"enter points is not forming an rectangle.";
+   }
+    return 0;
+}
